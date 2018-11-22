@@ -1,0 +1,25 @@
+# Redirects from what the browser requests to what we serve
+/about                        /about/accudio
+/contact                      /about/contact
+
+/portfolio/web                /portfolio
+/portfolio/web/*              /portfolio/:splat
+
+/portfolio/1896gallery        /portfolio/#lg=1&slide=10   200
+/portfolio/accudio            /portfolio/#lg=1&slide=3    200
+/portfolio/alistairshepherd   /portfolio/#lg=1&slide=4    200
+/portfolio/caledon            /portfolio/#lg=1&slide=7    200
+/portfolio/carrbridge         /portfolio/#lg=1&slide=0    200
+/portfolio/carvecarrbridge    /portfolio/#lg=1&slide=1    200
+/portfolio/glenmorebikes      /portfolio/#lg=1&slide=9    200
+/portfolio/goldenspurtle      /portfolio/#lg=1&slide=2    200
+/portfolio/homeofcolour       /portfolio/#lg=1&slide=8    200
+/portfolio/lochmorlich        /portfolio/#lg=1&slide=5    200
+/portfolio/upandbeyond        /portfolio/#lg=1&slide=6    200
+
+/prices/quote                 /about/contact
+/prices/web                   /services/web
+/privacypolicy                /privacy-policy
+/services                     /services/web
+
+/*                            /404                        404

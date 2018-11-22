@@ -16,14 +16,13 @@ app.prepare()
       const rootStaticFiles = [
         '/robots.txt',
         '/sitemap.xml',
-        '/favicon.ico',
-        '/manifest.json'
+        '/_redirects'
       ]
       if (pathname === '/service-worker.js') {
         const filePath = join(__dirname, '.next', pathname)
         app.serveStatic(req, res, filePath)
       } else if (rootStaticFiles.indexOf(parsedUrl.pathname) > -1) {
-        const path = join(__dirname, 'static', parsedUrl.pathname)
+        const path = join(__dirname, 'root', parsedUrl.pathname)
         app.serveStatic(req, res, path)
       } else {
         handle(req, res, parsedUrl)
