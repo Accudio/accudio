@@ -120,7 +120,7 @@ export default () => (
 
         <h4>Estimated Price</h4>
         <p>
-          The cost of all of our websites are estimated on a case-by-case basis, however we can give you an idea of the rough costs involved:
+          The cost of all of our websites are estimated on a case-by-case basis, however if you contact us with your requirements we will be able to give you a quick rough estimation. As a general rule you should expect: a simple HTML-only website from £300; a brochure-style Wordpress website from £500; a more advanced website including booking or shop from £800.
         </p>
         <p>
           For full-website projects we have a fixed-estimate structure, which means when a specification is agreed, we give you a price based on the work it will require, and that is the amount you will pay. As long as you don't decide to significantly increase the scope of the project after starting, this means that if the project takes longer for some reason, you don't end up with a larger bill than you expected.
