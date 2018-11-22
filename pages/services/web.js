@@ -31,7 +31,7 @@ export default () => (
 
         <h4>Simple HTML Sites</h4>
         <p>
-          For small businesses or individuals with a website that doesn't often need updating, a Content Management System like most website development companies offer may be over the top and unnecessary. This is why we offer the option for a simple website that a developer updates, but can be produced quicker and cheaper than a Content Management System.
+          For small businesses or individuals with a website that doesn't often need updating, a Content Management System like most website development companies offer may be over the top and unnecessary. This is why we offer the option for a simple website that doesn't feature an administration panel, but can be produced quicker, cheaper, and easier than a similar solution with a CMS.
         </p>
 
         <h4>WordPress</h4>

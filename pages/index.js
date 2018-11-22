@@ -24,7 +24,7 @@ export default () => (
           <div className="feature">
             <FontAwesomeIcon icon="pencil-alt" size="8x" transform="shrink-8" mask={['fas', 'circle']} />
             <h4>Graphic Design and Copy</h4>
-            <p>We can also design logos, marketing materials or copywrite your site to attract as many visitors as possible.</p>
+            <p>We can also design logos or marketing materials to attract as many visitors as possible, or copywrite your site to boost your conversions!</p>
           </div>
         </div>
       </div>

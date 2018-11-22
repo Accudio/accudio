@@ -7,6 +7,10 @@
   @include container();
 }
 
+h2 {
+  margin-bottom: .5rem;
+}
+
 // structured
 html {
   background: #323232;
@@ -427,12 +431,12 @@ html {
               color: $whitef;
               font-size: 1rem;
               font-weight: 600;
-              line-height: 1rem;
+              line-height: 1.2rem;
               margin: 5px 0 0;
 
               @media screen and (min-width: 768px) {
                 font-size: 1.5rem;
-                line-height: 1.5rem;
+                line-height: 1.7rem;
                 margin: 10px 0 0;
               }
             }
