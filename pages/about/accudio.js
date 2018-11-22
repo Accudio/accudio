@@ -34,7 +34,7 @@ export default () => (
             </Link>
           </div>
           <div className="cta-col">
-              <a className="cta-btn" href="https://alistairshepherd.uk">Visit my website</a>
+            <a className="cta-btn" href="https://alistairshepherd.uk">Visit my website</a>
           </div>
         </div>
 
