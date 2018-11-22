@@ -1,0 +1,59 @@
+{
+  "name": "accudio",
+  "version": "0.1.0",
+  "browserslist": "> 0.5%, last 2 versions, IE 10",
+  "description": "Fourth incarnation of accudio.com. Content brought over from existing subrion-based system into a static site based on next.js and React.",
+  "author": "Alistair Shepherd <alistair@accudio.com> (https://alistairshepherd.uk/)",
+  "contributors": [
+    "Alistair Shepherd <alistair@accudio.com> (https://alistairshepherd.uk/)"
+  ],
+  "private": false,
+  "license": "MPL-2.0",
+  "homepage": "https://accudio.com/",
+  "repository": "bitbucket:accudio/accudio",
+  "scripts": {
+    "dev": "node server",
+    "start": "next build && NODE_ENV=production node server",
+    "build": "next build",
+    "export": "npm run build && next export",
+    "lint": "eslint --ext .js --ignore-path .gitignore . && stylelint **/*.scss **/*.sass --ignore-path .gitignore",
+    "fix": "eslint --ext .js --ignore-path .gitignore . --fix && stylelint **/*.scss **/*.sass --ignore-path .gitignore --fix",
+    "precommit": "npm run lint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "dependencies": {
+    "@babel/core": "^7.1.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.7",
+    "@fortawesome/free-brands-svg-icons": "^5.4.2",
+    "@fortawesome/free-regular-svg-icons": "^5.4.2",
+    "@fortawesome/free-solid-svg-icons": "^5.4.2",
+    "@fortawesome/react-fontawesome": "^0.1.3",
+    "@zeit/next-sass": "^1.0.1",
+    "husky": "^1.2.0",
+    "lg-fullscreen.js": "^1.0.0",
+    "lg-hash.js": "^1.0.0",
+    "lg-share.js": "^1.2.2",
+    "lg-zoom.js": "^1.0.1",
+    "lightgallery.js": "^1.1.1",
+    "next": "^7.0.2",
+    "next-offline": "^3.2.1",
+    "node-sass": "^4.9.4",
+    "postcss-normalize": "^7.0.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "sass-loader": "^7.1.0",
+    "simplebar": "3.0.0-beta.4",
+    "webpack": "^4.23.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "stylelint": "^9.5.0",
+    "stylelint-config-sass-guidelines": "^5.2.0",
+    "stylelint-scss": "^3.3.0"
+  }
+}
