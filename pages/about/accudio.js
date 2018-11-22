@@ -1,5 +1,6 @@
 import Layout from '../../components/Layout_Default.js'
 import Head from 'next/head'
+import Link from 'next/link'
 
 const description = "Web Developer, Graphic Designer & Server Administrator"
 
