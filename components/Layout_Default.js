@@ -56,7 +56,7 @@ class Layout extends React.Component {
           <meta property="og:title" content="Accudio Web Services" key="og-title" />
           <meta property="og:url" content="https://accudio.com/" key="og-url" />
           <meta property="og:description" content="Accudio is a web design, development, and hosting agency created by Alistair Shepherd, located in the Highlands of Scotland based in the Strathspey and the Isle of Skye. We create a variety of sites that look great however you view them." key="og-description" />
-          <meta property="og:image" content="https://accudio.com/static/og-image.jpg" key="og-image" />
+          <meta property="og:image" content="https://accudio.com/static/open-graph.jpg" key="og-image" />
 
           <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
 
