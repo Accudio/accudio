@@ -19,7 +19,7 @@ export default () => (
         <h3>Opt-out of tracking</h3>
         <p>We would really appreciate if users let us collect information about their visit to accudio.com as it allows us to improve our website and services based upon user interaction. If you do not wish to be tracked however, accudio.com respects your browsers 'Do Not Track' setting or you can opt out of tracking below. This stores an anonymised non-expiring cookie in your browser that we use to identify devices that should not be tracked.</p>
         <hr />
-        {/*<iframe style="border: 0; width: 100%;" src="{PIWIK ANALYTICS URL}" width="300" height="150"></iframe>*/}
+        <iframe style={{border: '0', height: '200px', width: '100%'}} src="https://analytics.accudio.com/index.php?module=CoreAdminHome&action=optOut&idsite=1&language=en"></iframe>
         <hr />
         <h3>Gathering of Personally-Identifying Information</h3>
         <p>Certain aspects of accudio.com have facilities to collect personal information for a specific purpose. For example, in our and contact form. This information is only stored for the purpose of responding to contact forms, and will never be disclosed to any persons outside of Accudio. Visitors are also of course able to refuse to supply this information by contacting us through other means.</p>

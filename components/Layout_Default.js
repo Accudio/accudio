@@ -18,6 +18,7 @@ class Layout extends React.Component {
   componentDidMount() {
     this.updateWindowDimensions();
     window.addEventListener('scroll', this.updateWindowDimensions);
+    this.matomo();
   }
 
   componentWillUnmount() {
@@ -26,6 +27,22 @@ class Layout extends React.Component {
 
   updateWindowDimensions = () => {
     this.setState({scrollY: window.scrollY});
+  }
+
+  matomo() {
+    if(typeof window !== 'undefined') {
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.accudio.com/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '9']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    }
   }
 
   render() {
@@ -66,6 +83,7 @@ class Layout extends React.Component {
                 max-height: 1em;
             }
           `}</style>
+
         </Head>
 
         <Topbar />
