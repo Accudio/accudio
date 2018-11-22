@@ -25,13 +25,14 @@ export default class Error extends React.Component {
   }
 
   static getInitialProps({ res, err }) {
-    const statusCode = res ? res.statusCode : err ? err.statusCode : null;
+    const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
     return { statusCode }
   }
 
   render() {
-    const title = 'Error '+this.props.statusCode+' — '+this.state[this.props.statusCode].title
-    const description = this.state[this.props.statusCode].desc
+    const statusCode = this.props.statusCode ? this.props.statusCode : 404
+    const title = 'Error '+statusCode+' — '+this.state[statusCode].title
+    const description = this.state[statusCode].desc
     return (
       <Layout header="titlebar" title={title} description={description} id="error">
         <Head>
