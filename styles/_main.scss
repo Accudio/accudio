@@ -574,6 +574,18 @@ html {
             text-align: center;
           }
 
+          p.alert {
+            background: rgba(#f00, .1);
+            border: 1px solid #f00;
+            border-radius: 4px;
+            font-size: 1.3rem;
+            font-weight: 300;
+            line-height: 1.4;
+            margin-bottom: 40px;
+            padding: 20px;
+            text-align: center;
+          }
+
           .features {
             display: flex;
             flex-wrap: wrap;

@@ -28,6 +28,39 @@ export default () => (
     <section className="portfolio">
 
       <div className="captions">
+        <div id="activespirit-cap">
+          <div className="cap-inner">
+            <h2>Active Spirit</h2>
+            <p>
+              In October 2018 Tracey and Ian Pullen contacted me regardging the website for their outdoor activity company, Active Spirit. As they were a small business, they offered very tailored experiences for all ages, abilities and walks of life. Their previous website, although very informative, featured a dated early-00s design, and did not support mobile devices at all, something that needed sorely addressed in order to attract customers online.
+            </p>
+            <p>
+              As they already had good content, and a good idea for what they were looking for, I made a modern, fully-responsive design inspired by the colours and content used on the old website. This was turned into a bespoke WordPress theme for a great looking brochure-style website. At the same time, we decided it would be best to move their blog from their previously functional but clunky Blogspot to the blogging system built into WordPress. Thanks for the import functionality of WordPress, it was extremely easy to bring across all of their old posts, and give them a fresh look and allow for people to look through them more easily.
+            </p>
+            <p>
+              The website went live in mid January 2019, and has already made a significant impact on their search ranking (without extensive SEO) and on their conversions.
+            </p>
+          </div>
+          <a className="ext-url" href="https://activespirit.co.uk">Visit Website</a>
+        </div>
+        <div id="capperkirk-cap">
+          <div className="cap-inner">
+            <h2>Capperkirk</h2>
+            <p>
+              In August 2018 I was approached by Heather Haywood, a holiday home owner with a desire to offer a website showing off their beautiful renovated church in the Scottish Borders as self-catered accommodation. We also established that a simple booking system would be great as it would make it a lot easier for people to book online quickly and without any difficulty.
+            </p>
+            <p>
+              As this was a brand new website, we worked out a specification and design that really showed off the best of Capperkirk, and it was a joy to work with their numerous and beautiful photos of the church and the surrounding area. 
+            </p>
+            <p>
+              The website was built as a bespoke WordPress theme, using easyReservations as a booking platform. Although there were some teething issues to begin with, the easyReservations developer was extremely quick at solving any problems we had.
+            </p>
+            <p>
+              The website went live in mid January 2019.
+            </p>
+          </div>
+          <a className="ext-url" href="https://capperkirk.scot">Visit Website</a>
+        </div>
         <div id="carrbridge-cap">
           <div className="cap-inner">
             <h2>Carrbridge</h2>
@@ -205,6 +238,22 @@ export default () => (
       </div>
 
       <div className="contain" id="lightgallery">
+
+        <div className="p-outer" data-src="/static/portfolio/activespirit.jpg" data-sub-html="#activespirit-cap">
+          <a className="p-wrap" href="/static/portfolio/activespirit.jpg" style={{backgroundImage: 'linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.5)), url(/static/portfolio/activespirit-thumb.jpg)'}}>
+            <div className="p-inner">
+              <h2>Active Spirit</h2>
+            </div>
+          </a>
+        </div>
+
+        <div className="p-outer" data-src="/static/portfolio/capperkirk.jpg" data-sub-html="#capperkirk-cap">
+          <a className="p-wrap" href="/static/portfolio/capperkirk.jpg" style={{backgroundImage: 'linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.5)), url(/static/portfolio/capperkirk-thumb.jpg)'}}>
+            <div className="p-inner">
+              <h2>Capperkirk</h2>
+            </div>
+          </a>
+        </div>
 
         <div className="p-outer" data-src="/static/portfolio/carrbridge.jpg" data-sub-html="#carrbridge-cap">
           <a className="p-wrap" href="/static/portfolio/carrbridge.jpg" style={{backgroundImage: 'linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.5)), url(/static/portfolio/carrbridge-thumb.jpg)'}}>
