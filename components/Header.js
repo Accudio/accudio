@@ -23,7 +23,7 @@ const Header = (props) => {
       }
       { type == 'about' &&
         <div className="contain">
-          <img src="https://accudio.com/uploads/alistairshepherd.jpg" alt="Alistair Shepherd, developer at Accudio" />
+          <img src="/static/img/alistairshepherd.jpg" alt="Alistair Shepherd, developer at Accudio" />
           <h1>{props.title}</h1>
           <div className="subtitle">
             {props.description}
