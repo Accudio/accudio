@@ -21,7 +21,7 @@ class Form extends React.Component {
     this.form = React.createRef();
   }
 
-  handleSubmit = (el) => {
+  handleSubmit = (e) => {
     e.preventDefault()
     fetch('/', {
       method: 'POST',
