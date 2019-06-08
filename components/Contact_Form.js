@@ -16,7 +16,7 @@ class Form extends React.Component {
         message: ''
       },
       validated: false,
-      message: ''
+      message: 'Submitting...'
     };
     this.form = React.createRef();
   }
@@ -28,9 +28,9 @@ class Form extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: this.encode({'form-name': 'accudio-contact', ...this.state.form})
     }).then(() => {
-      this.message = 'Thanks! I\'ll get back to you as soon as I can!'
+      this.setState({message: 'Thanks! I\'ll get back to you as soon as I can!'})
     }).catch((error) => {
-      this.message = 'It appears there was an error in submitting the form. Please try again later'
+      this.setState({message: 'It appears there was an error in submitting the form. Please try again later'})
     });
     this.setState({ validated: true });
   }

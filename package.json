@@ -18,7 +18,8 @@
     "export": "npm run build && next export",
     "lint": "eslint --ext .js --ignore-path .gitignore . && stylelint **/*.scss **/*.sass --ignore-path .gitignore",
     "fix": "eslint --ext .js --ignore-path .gitignore . --fix && stylelint **/*.scss **/*.sass --ignore-path .gitignore --fix",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "deploy": "npm run export && netlify deploy"
   },
   "husky": {
     "hooks": {
