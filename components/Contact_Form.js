@@ -16,12 +16,13 @@ class Form extends React.Component {
         message: ''
       },
       validated: false,
-      message: 'Please complete the required fields before submitting'
+      message: ''
     };
     this.form = React.createRef();
   }
 
   handleSubmit = (el) => {
+    e.preventDefault()
     fetch('/', {
       method: 'POST',
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
