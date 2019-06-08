@@ -62,14 +62,14 @@ class Form extends React.Component {
       btnDisabled = false;
     }
     return (
-      <form ref={this.form} className={"form contact-form " + (this.state.validated ? 'was-validated' : '')} method="post" name="alistair-shepherd-contact" role="form" noValidate="novalidate" netlify="true" netlify-honeypot="oh-dear" onSubmit={this.handleSubmit}>
+      <form ref={this.form} className={"form contact-form " + (this.state.validated ? 'was-validated' : '')} method="post" name="alistair-shepherd-contact" role="form" noValidate="novalidate" data-netlify="true" netlify="true" netlify-honeypot="oh-dear" data-netlify-recaptcha="true" onSubmit={this.handleSubmit}>
         <input type="hidden" name="form-name" value="alistair-shepherd-contact" />
         <div className="message">
           <div className="inner">
             { this.state.message }
           </div>
         </div>
-        <div className="d-none">
+        <div className="screen-reader-text">
           <label>Don’t fill this out if you're human: <input name="oh-dear" /></label>
         </div>
         <div className="row">
@@ -95,6 +95,11 @@ class Form extends React.Component {
               <span className="checkmark"></span>
               By submitting this form I agree that Accudio can store my submitted information in accordance with the <Link href="/privacy-policy"><a>Privacy Policy</a></Link> in order to respond to my enquiry.
             </label>
+          </div>
+        </div>
+        <div className="row">
+          <div className="form-input">
+            <div data-netlify-recaptcha="true"></div>
           </div>
         </div>
         <div className="row">

@@ -47,7 +47,7 @@ const Footer = () => (
           </li>
         </ul>
         <div className="copy">
-          <span>&copy; 2018 Website designed and created by <Link href="/"><a>Accudio</a></Link> &mdash; <Link href="/privacy-policy"><a>Privacy&nbsp;Policy</a></Link></span>
+          <span>&copy; 2019 Website designed and created by <Link href="/"><a>Accudio</a></Link> &mdash; <Link href="/privacy-policy"><a>Privacy&nbsp;Policy</a></Link></span>
         </div>
       </div>
     </div>
