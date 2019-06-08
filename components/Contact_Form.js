@@ -28,20 +28,16 @@ class Form extends React.Component {
   }
 
   handleSubmit = (el) => {
-    const form = this.form
-    if(form.checkValidity() !== false) {
-      fetch('/', {
-        method: 'POST',
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: this.encode({'form-name': 'alistair-shepherd-contact', ...this.state.form})
-      }).then(() => {
-        this.message = 'Thanks! I\'ll get back to you as soon as I can!'
-      }).catch((error) => {
-        this.message = 'It appears there was an error in submitting the form. Please try again later'
-      });
-    }
+    fetch('/', {
+      method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: this.encode({'form-name': 'accudio-contact', ...this.state.form})
+    }).then(() => {
+      this.message = 'Thanks! I\'ll get back to you as soon as I can!'
+    }).catch((error) => {
+      this.message = 'It appears there was an error in submitting the form. Please try again later'
+    });
     this.setState({ validated: true });
-    el.preventDefault();
   }
 
   handleFocus = (el) => {
@@ -62,7 +58,7 @@ class Form extends React.Component {
       btnDisabled = false;
     }
     return (
-      <form ref={this.form} className={"form contact-form " + (this.state.validated ? 'was-validated' : '')} method="post" name="alistair-shepherd-contact" role="form" noValidate="novalidate" data-netlify="true" netlify="true" netlify-honeypot="oh-dear" data-netlify-recaptcha="true" onSubmit={this.handleSubmit}>
+      <form ref={this.form} className={"form contact-form " + (this.state.validated ? 'was-validated' : '')} method="post" name="accudio-contact" role="form" data-netlify="true" netlify="true" netlify-honeypot="oh-dear" onSubmit={this.handleSubmit}>
         <input type="hidden" name="form-name" value="alistair-shepherd-contact" />
         <div className="message">
           <div className="inner">
@@ -95,11 +91,6 @@ class Form extends React.Component {
               <span className="checkmark"></span>
               By submitting this form I agree that Accudio can store my submitted information in accordance with the <Link href="/privacy-policy"><a>Privacy Policy</a></Link> in order to respond to my enquiry.
             </label>
-          </div>
-        </div>
-        <div className="row">
-          <div className="form-input">
-            <div data-netlify-recaptcha="true"></div>
           </div>
         </div>
         <div className="row">
