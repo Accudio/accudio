@@ -1,11 +1,5 @@
 import Link from 'next/link'
 
-const encode = (data) => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
-
 class Form extends React.Component {
   constructor(props) {
     super(props);
@@ -38,6 +32,12 @@ class Form extends React.Component {
       this.message = 'It appears there was an error in submitting the form. Please try again later'
     });
     this.setState({ validated: true });
+  }
+
+  encode = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
   }
 
   handleFocus = (el) => {
