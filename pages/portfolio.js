@@ -215,10 +215,9 @@ export default () => (
               I built a simple single-page website using Bootstrap 4 to present information for visitors and his contact details, that would allow people to find him online more easily, and he could provide to people for more details. As he wanted to be able to change text and images but was concerned about getting it wrong, I integrated SiteCake - a great PHP-based site editor that I could heavily restrict so he could manage content extremely easily.
             </p>
             <p>
-              As a simple website on the same hosting he’s had for years, it will continue to serve him well!
+              As a simple website on the same hosting he’s had for years, it served him well until the business closed in mid-2019!
             </p>
           </div>
-          <a className="ext-url" href="http://glenmorebikes.co.uk">Visit Website</a>
         </div>
         <div id="the1896gallery-cap">
           <div className="cap-inner">
