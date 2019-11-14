@@ -42,7 +42,7 @@
     "lightgallery.js": "^1.1.1",
     "next": "^7.0.2",
     "next-offline": "^3.2.1",
-    "node-sass": "^4.9.4",
+    "node-sass": "^4.13.0",
     "postcss-normalize": "^7.0.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
